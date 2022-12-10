@@ -2,7 +2,7 @@
 {
     private static void Main(string[] args)
     {
-        string[] lines = System.IO.File.ReadAllLines("E:\\Stuff\\CSprojects\\Advent\\Advent2022\\Data\\day7.txt");
+        string[] lines = System.IO.File.ReadAllLines("E:\\Stuff\\CSprojects\\Advent\\Advent2022\\Data\\day.txt");
 
         Node head = new();
         Node cur = head;
