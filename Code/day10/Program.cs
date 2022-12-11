@@ -13,7 +13,6 @@ Dictionary<int,int> toAdd = new();
 while(work){
     cycle++;
     if(x -1 <= (cycle%40)-1 && x + 1 >= (cycle%40)-1){
-        Console.WriteLine($"x:{x} cycle:{cycle%40} {cycle}");
         pixels.Add(1);
     }
     else{
@@ -38,10 +37,10 @@ while(work){
        work = false;
     }
 
+    if(toAdd.ContainsKey(cycle)){
     if(cycle == 20 || cycle == 60 || cycle == 100 || cycle == 140 || cycle == 180 || cycle == 220){
         sum += (cycle * x);
     }
-    if(toAdd.ContainsKey(cycle)){
         x += toAdd[cycle];
         toAdd.Remove(cycle);
     }
